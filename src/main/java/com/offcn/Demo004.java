@@ -13,11 +13,11 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Demo004 {
-
+//********************************************************************************************
 	public static void main(String[] args) throws EncryptedDocumentException, InvalidFormatException, FileNotFoundException, IOException {
 		Workbook workbook=WorkbookFactory.create(new FileInputStream("d:\\chart\\hello.xls"));
 
-		Sheet sheet = workbook.getSheet("¹¤×÷±í1");
+		Sheet sheet = workbook.getSheet("sheet1");
 		
 		Row row = sheet.getRow(0);
 		
